@@ -29,6 +29,7 @@ public class NavigationnActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private Fragment homeFragment;
+    private Fragment storeFragment;
     private Button bt_cart;
 
 
@@ -40,6 +41,7 @@ public class NavigationnActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(0xFFFFFFFF));
+
         homeFragment = new HomeFragment();
 
         FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
