@@ -86,7 +86,7 @@ public class HomeFragment extends Fragment {
         lv_near_store=view.findViewById(R.id.lv_near_store);
         lv_near_store.setLayoutManager(new LinearLayoutManager(inflater.getContext()));
 
-            currentStoreInfos = CurrentStoreInfo.getStore().getStoreInfos();
+        currentStoreInfos = CurrentStoreInfo.getStore().getStoreInfos();
 
         adapter= new adpatertest(currentStoreInfos,inflater.getContext());
 
